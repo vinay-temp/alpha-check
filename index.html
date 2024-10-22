@@ -94,11 +94,8 @@
             changeLetter();
         }
     }
-
-    document.getElementById('user_input').addEventListener('keydown', function(event) {
-        checkPosition();
-    });
-
+    
+    setInerval(checkPosition, 100);
     changeLetter();
 </script>
 
